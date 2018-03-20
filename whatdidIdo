@@ -1,0 +1,289 @@
+    1  service waagent stop
+    2  yum install chrony
+    3  systemctl disable chronyd
+    4  systemctl status ntpd
+    5  systemctl list-unit-file
+    6  systemctl list-unit-files
+    7  systemctl list-unit-files|grep ntp
+    8  ifconfig
+    9  ls
+   10  ls -la
+   11  ls
+   12  vim callback.php 
+   13  ls
+   14  rm callback.php 
+   15  cp -r /home/carol/line-bot .
+   16  ls
+   17  cd line-bot/
+   18  ls
+   19  cd ..
+   20  ls
+   21  ls -ltr
+   22  chmod 644 line-bot/
+   23  chmod 777 line-bot/
+   24  cd line-bot/
+   25  ls
+   26  vim callback.php 
+   27  ls -al
+   28  chmod 777 callback*
+   29  ls -al
+   30  vim callback.php 
+   31  exit
+   32  curl -sS https://getcomposer.org/installer | php
+   33  mv composer.phar /usr/local/bin/composer
+   34  echo $PATH
+   35  export PATH=$PATH:/usr/local/bin
+   36  composer require linecorp/line-bot-sdk
+   37  composer installls
+   38  cd vendor/
+   39  cd linecorp/
+   40  ls
+   41  cd line-bot-sdk/
+   42  composer install
+   43  exit
+   44  cat > /etc/yum.repos.d/remi-php56.repo << EOF
+   45  [remi-php56]
+   46  name=remi-php56
+   47  baseurl=http://rpms.famillecollet.com/enterprise/7/php56/x86_64/
+   48  enabled=1
+   49  gpgcheck=0
+   50  EOF
+   51  yum clean expire-cache
+   52  yum update
+   53  wget http://rpms.famillecollet.com/enterprise/7/remi/x86_64/gd-last-2.2.1-2.el7.remi.x86_64.rpm
+   54  ls
+   55  wget http://rpms.famillecollet.com/enterprise/7/remi/x86_64/gd-last-2.2.5-1.el7.remi.x86_64.rpm
+   56  ls
+   57  yum localinstall gd-last-*.rpm
+   58  wget http://rpms.famillecollet.com/enterprise/7/remi/x86_64/libzip-last-1.1.3-1.el7.remi.x86_64.rpm
+   59  yum localinstall libzip-last-*.rpm
+   60  yum update
+   61  ls
+   62  yum localinstall libzip-last-*.rpm
+   63  yum update --skip-broken
+   64  php -v
+   65  yum update
+   66  vim /etc/yum.repos.d/remi-php56.repo 
+   67  yum update
+   68  history | grep compos
+   69  cd /var/www/html/
+   70  ls
+   71  cd line-bot/
+   72  ls
+   73  composer install
+   74  /usr/local/bin/composer install
+   75  rm -rf vendor/
+   76  rm composer.
+   77  rm composer.lock 
+   78  /usr/local/bin/composer install
+   79  ls
+   80  exit
+   81  mv composer.phar /usr/local/bin/composer
+   82  ls
+   83  echo $PATH
+   84  export PATH=$PATH:/usr/local/bin/
+   85  composer require linecorp/line-bot-sdk
+   86  ls
+   87  cd ~
+   88  ls
+   89  git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
+   90  sudo mkdir /etc/ssl/private
+   91  sudo chmod 700 /etc/ssl/private
+   92  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+   93  ls
+   94  more /etc/ssl/private/apache-selfsigned.key 
+   95  sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+   96  cat /etc/ssl/certs/dhparam.pem | sudo tee -a /etc/ssl/certs/apache-selfsigned.crt
+   97  sudo vi /etc/httpd/conf.d/ssl.conf
+   98  sudo yum install mod_ssl
+   99  sudo vi /etc/httpd/conf.d/ssl.conf 
+  100  rm -r /etc/ssl/private
+  101  sudo mkdir /etc/ssl/private
+  102  sudo chmod 700 /etc/ssl/private
+  103  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+  104  sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+  105  cat /etc/ssl/certs/dhparam.pem | sudo tee -a /etc/ssl/certs/apache-selfsigned.crt
+  106  sudo vi /etc/httpd/conf.d/ssl.conf
+  107  sudo vi /etc/httpd/conf.d/non-ssl.conf
+  108  sudo apachectl configtest
+  109  vim /etc/httpd/conf/httpd.conf 
+  110  vi /etc/httpd/conf/httpd.conf 
+  111  service waagent stop
+  112  service waagent start
+  113  sudo systemctl restart httpd.service
+  114  sudo apachectl configtest
+  115  sudo systemctl restart httpd.service
+  116  ls
+  117  cd /var/www/html/
+  118  ls
+  119  vi hello.php
+  120  vi hello.php
+  121  yum install vim
+  122  vim hello.php 
+  123  yum install git
+  124  git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
+  125  cd /opt/letsencrypt/
+  126  ./letsencrypt-auto certonly
+  127  ls
+  128  cd /etc/letsencrypt/li
+  129  cd /etc/letsencrypt/
+  130  ls
+  131  cd accounts/
+  132  ls
+  133  cd ../
+  134  ls
+  135  find . | grep carol
+  136  vim /etc/httpd/conf/httpd.conf 
+  137  sudo systemctl restart httpd.service
+  138  cd /opt/letsencrypt/
+  139  ./letsencrypt-auto certonly
+  140  ./letsencrypt-auto certonly
+  141  ./letsencrypt-auto certonly
+  142  cd /etc/letsencrypt/live/
+  143  ls
+  144  cd carol-robot-test.eastus.cloudapp.azure.com/
+  145  ls
+  146  mkdir /opt/httpd/SSL
+  147  mkdir /opt/httpd
+  148  mkdir /opt/httpd/SSL
+  149  ls
+  150  cp ./* /opt/httpd/SSL/
+  151  vi /opt/httpd/conf/httpd.conf
+  152  vim /etc/httpd/conf.d/ssl.conf 
+  153  pwd
+  154  cd /opt/httpd/SSL
+  155  ls
+  156  vim /etc/httpd/conf.d/ssl.conf 
+  157  sudo systemctl restart httpd.service
+  158  vim /etc/httpd/conf.d/ssl.conf 
+  159  ls /opt/httpd/SSL/privkey1.pem
+  160  ls /opt/httpd/SSL/
+  161  vim /etc/httpd/conf.d/ssl.conf 
+  162  sudo systemctl restart httpd.service
+  163  ls
+  164  cd /var/www/html/
+  165  ls
+  166  vim hello.php 
+  167  more hello.php 
+  168  touch /tmp/string
+  169  tail -10f /tmp/string 
+  170  ls
+  171  more /tmp/string 
+  172  vim hello.php 
+  173  more /tmp/string 
+  174  tail -f /tmp/string 
+  175  ls
+  176  more /tmp/string 
+  177  rm /tmp/string
+  178  ls
+  179  ls
+  180  vim hello.php 
+  181  ls
+  182  ssh admin@yuhao1098.ddns.net -p 10022
+  183  ssh admin@118.167.25.172 -p 10022
+  184  ping 118.167.25.172
+  185  ssh admin@118.167.25.172 -p 10022
+  186  ssh admin@118.167.25.172 -p 10022
+  187  ping ca-ot-fs3.us.trendnet.org
+  188  ls
+  189  tail -10f /var/log/httpd/ssl_error_log 
+  190  ls
+  191  cd vendor/
+  192  ls
+  193  cd linecorp/
+  194  ls
+  195  cd line-bot-sdk/
+  196  ls
+  197  cd src/
+  198  ls
+  199  cd LINEBot
+  200  ls
+  201  cp ../../line-bot-sdk-tiny/LINEBotTiny.php .
+  202  ls
+  203  tail -10f /var/log/httpd/ssl_error_log 
+  204  ls
+  205  vim LINEBotTiny.php 
+  206  ls
+  207  cd ../
+  208  ls
+  209  vim LINEBot.php 
+  210  cd ../
+  211  ls
+  212  cd line-bot-sdk-tiny/
+  213  ls
+  214  vim LINEBotTiny.php 
+  215  ls
+  216  cd ../
+  217  ls
+  218  cd src/
+  219  ls
+  220  cd LINEBot
+  221  ls
+  222  rm LINEBotTiny.php 
+  223  ls
+  224  cd ../
+  225  ls
+  226  cd ../../../
+  227  ls
+  228  cd ../
+  229  ls
+  230  vim callback
+  231  vim callback.php 
+  232  tail -10f /var/log/httpd/ssl_error_log 
+  233  vim callback.php 
+  234  ls /etc/localtime 
+  235  more /etc/localtime
+  236  sudo mv /etc/localtime /etc/localtime.bak
+  237  sudo ln -s /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+  238  date
+  239  sudo systemctl restart httpd.service
+  240  ls
+  241  vim callback.php 
+  242  vim test.php
+  243  php test.php 
+  244  vim callback.php 
+  245  test.php
+  246  vim test.php 
+  247  php test.php 
+  248  vim callback
+  249  vim callback.php 
+  250  grep "getUserID" * -r -i
+  251  vim callback.php 
+  252  tail -10f /var/log/httpd/ssl_error_log 
+  253  vim callback.php 
+  254  tail -10f /var/log/httpd/ssl_error_log 
+  255  vim callback.php 
+  256  tail -10f /var/log/httpd/ssl_error_log 
+  257  vim callback.php 
+  258  ls
+  259  more /home/carol/callback.php 
+  260  vim callback.php 
+  261  more /home/carol/callback.php 
+  262  vim callback.php 
+  263  cp callback.php callback_tmp.php 
+  264  vim callback_tmp.php 
+  265  ls
+  266  ls
+  267  history 
+  268  history > /home/carol/
+  269  history > /home/carol/history
+  270  chmod 666 /home/carol/history 
+  271  more /home/carol/history 
+  272  ls
+  273  cd ../
+  274  ls
+  275  ls
+  276  cp line-bot/callback_tmp.php /home/carol/
+  277  chmod 666 /home/carol/callback_tmp.php 
+  278  ls
+  279  exit
+  280  tail -10f /var/log/httpd/ssl_error_log 
+  281  ls
+  282  cd /var/www/html/
+  283  ls
+  284  cd line-bot/
+  285  ls
+  286  vim callback.php 
+  287  vim callback.php 
+  288  history 
+  289  history > whatdidIdo
